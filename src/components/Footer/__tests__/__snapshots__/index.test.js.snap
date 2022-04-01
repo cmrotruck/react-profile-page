@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component matches snapshot 1`] = `
+<DocumentFragment>
+  <footer>
+    <img
+      alt="linked in logo small"
+      src="./assets/footer/LI-ln-Bug.png"
+    />
+  </footer>
+</DocumentFragment>
+`;

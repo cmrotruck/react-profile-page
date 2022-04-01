@@ -1,0 +1,51 @@
+:root {
+  --primary: #1f3a5d;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: white;
+}
+
+header {
+  background-color: var(--primary);
+}
+
+body h1 {
+  font-size: 36pt;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.ui.secondary.pointing.menu {
+  border-bottom: none !important;
+}
+
+.active.item {
+  border-color: white !important;
+}
+
+.item {
+  color: white !important;
+  font-size: 18px !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.footerLogo {
+  width: 32px;
+  height: 32px;
+  margin: 1% 1%;
+}
