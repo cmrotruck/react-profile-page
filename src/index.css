@@ -5,38 +5,53 @@
 main {
   margin: 0 auto;
   max-width: 90%;
+
   padding: 50px 30px;
 }
 
 body {
   margin: 0;
-  color: white;
+
   background-color: white;
 }
 
 header {
   background-color: var(--primary);
+  color: white;
 }
 
-body h1 {
+header h1 {
   font-size: 36pt;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.ui.secondary.pointing.menu {
-  border-bottom: none !important;
+.nav-item a {
+  /* margin-bottom: 0%; */
+  display: block;
+  color: white;
 }
 
-.active.item {
-  border-color: white !important;
+.nav-link.active.item {
+  border-bottom: 2px solid white;
+  /* border-color: white !important; */
+  /* font-size: 28px !important; */
 }
 
 .item {
   color: white !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+.about {
+  margin: 5%;
+}
+
+.portfolio_photo {
+  width: 50% !important;
+  height: 50% !important;
 }
 
 footer {
