@@ -54,6 +54,25 @@ header h1 {
   height: 50% !important;
 }
 
+.deployed {
+  padding-bottom: 20%;
+}
+
+.card_deployed_link {
+  color: black !important;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact {
+  margin: 2%;
+}
+
+.contact h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 footer {
   background-color: var(--primary);
   text-align: center;
