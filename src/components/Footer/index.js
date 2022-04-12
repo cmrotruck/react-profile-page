@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => {
   return (
-    <footer className="fixed">
+    <footer className="footer">
       <img
         className="footerLogo"
         src={require("../../assets/footer/27-277988_linkedin-logo-png-branco.png")}

@@ -11,20 +11,18 @@ const Contact = () => {
   const handleSubmit = () => {
     //send email here
     // return <h1>Email sent!</h1>;
+    setIsEmailValid(validateEmail(emailVal));
+
     if (nameVal.length > 0 && messageVal.length > 0 && isEmailValid) {
+      console.log("this is good");
       setIsSubmitted(true);
+      setEmailVal("");
+      setNameVal("");
+      setMessageVal("");
+      setIsEmailValid(true);
     }
 
-    console.log(
-      "NameVal Length: ",
-      nameVal.length,
-      "messageVal Length: ",
-      messageVal.length,
-      "isEmailValid: ",
-      isEmailValid,
-      "isSubmitted: ",
-      isSubmitted
-    );
+    console.log("isEmailValid: ", isEmailValid, "isSubmitted: ", isSubmitted);
   };
 
   const validateEmail = (email) => {
@@ -42,13 +40,14 @@ const Contact = () => {
         <Grid.Column></Grid.Column>
         <Grid.Column>
           <h1>Contact Me</h1>
-          <Form success={isSubmitted}>
+          <Form onSubmit={handleSubmit}>
             <Form.Field>
               <Form.Input
                 label="Full Name"
                 placeholder="Full Name"
                 name="fullName"
                 required
+                value={nameVal}
                 onChange={(e) => {
                   setNameVal(e.target.value);
                 }}
@@ -60,12 +59,13 @@ const Contact = () => {
                 placeholder="Email"
                 name="email"
                 required
+                value={emailVal}
                 onChange={(e) => {
                   setEmailVal(e.target.value);
 
-                  // if (!isEmailValid) {
-                  //   setIsEmailValid(true);
-                  // }
+                  if (!isEmailValid) {
+                    setIsEmailValid(true);
+                  }
                 }}
                 onMouseLeave={(e) => {
                   setIsEmailValid(validateEmail(emailVal));
@@ -86,25 +86,24 @@ const Contact = () => {
                 label="Message"
                 placeholder="Message"
                 required
+                value={messageVal}
                 onChange={(e) => {
                   setMessageVal(e.target.value);
                 }}
               />
             </Form.Field>
-            {isSubmitted ? (
-              <Message
-                success
-                header="Thank You!"
-                content="Expect a response within 2 business days."
-              />
-            ) : (
-              false
-            )}
 
-            <Button type="submit" onClick={handleSubmit}>
-              Submit
-            </Button>
+            <Button type="submit">Submit</Button>
           </Form>
+          {isSubmitted ? (
+            <Message
+              success
+              header="Thank You!"
+              content="Expect a response within 2 business days."
+            />
+          ) : (
+            false
+          )}
         </Grid.Column>
         <Grid.Column></Grid.Column>
       </Grid>
