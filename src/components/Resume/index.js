@@ -1,4 +1,5 @@
 import React from "react";
+import myPDF from "../../assets/pdf/Chad_Rotruck_Resume.pdf";
 
 const Resume = () => {
   return (
@@ -8,13 +9,18 @@ const Resume = () => {
         Download a copy of my resume{" "}
         <span>
           <a
-            href="https://docs.google.com/document/d/1zJjotQA6CmTt6E5evukREKomhGKHMJmRNhHdzu6n_Lo/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1q-Q-BMlb7Geay1bm8ckJ7Ggouk7_lbs1/view?usp=sharing"
             download
           >
             here
           </a>
         </span>
       </p>
+
+      {/* <a href={myPDF} download="Chad_Rotruck_Resume.pdf">
+        {" "}
+        Download Here{" "}
+      </a> */}
       <h2>Front-end Profenciencies</h2>
       <ul>
         <li>HTML</li>
