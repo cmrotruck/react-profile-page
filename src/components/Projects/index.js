@@ -28,6 +28,15 @@ const Projects = () => {
             github="https://github.com/cmrotruck/the-forum"
             deployed="https://chad-the-forum.herokuapp.com/"
           />
+          <ProjectCard
+            title="Bootcamp Zoo"
+            created="2022"
+            description="An application that mimics a zoo website. It allows for donations to be made
+                base an animal breed. Also has a feed for conversations to be held."
+            screenshot={require("../../assets/Projects/Bootcamp_Zoo.jpg")}
+            github="https://github.com/cmrotruck/bootcamp-zoo"
+            deployed="http://bootcamp-zoo.herokuapp.com/"
+          />
           {/* <ProjectCard /> */}
         </Card.Group>
       </Dimmer.Dimmable>
