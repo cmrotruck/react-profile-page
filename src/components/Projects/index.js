@@ -14,9 +14,10 @@ const Projects = () => {
             description="An application that you can search food recipes by entering a
                 type of food and will return 6 recipies and nutritional facts
                 about the recipe."
-            screenshot={require("../../assets/Projects/screenshot.jpg")}
+            screenshot={require("../../assets/Projects/Recipe_Search_Screenshot.jpg")}
             github="https://github.com/cmrotruck/recipe-search"
             deployed="https://cmrotruck.github.io/recipe-search/"
+            skills="HTML, CSS, JavaScript, Semantic UI, JQuery"
           />
           <ProjectCard
             title="The Forum"
@@ -27,6 +28,7 @@ const Projects = () => {
             screenshot={require("../../assets/Projects/The_Forum_Screenshot.jpg")}
             github="https://github.com/cmrotruck/the-forum"
             deployed="https://chad-the-forum.herokuapp.com/"
+            skills="HTML, CSS, JavaScript, Semantic UI, JQuery, Sequelize, MySQL, 3rd Party APIs"
           />
           <ProjectCard
             title="Bootcamp Zoo"
@@ -36,6 +38,7 @@ const Projects = () => {
             screenshot={require("../../assets/Projects/Bootcamp_Zoo.jpg")}
             github="https://github.com/cmrotruck/bootcamp-zoo"
             deployed="http://bootcamp-zoo.herokuapp.com/"
+            skills="HTML, CSS, JavaScript, React.js, Semantic UI for React, MondoDB, Mongoose"
           />
           {/* <ProjectCard /> */}
         </Card.Group>
