@@ -39,6 +39,13 @@ const Contact = () => {
       <Grid columns="3">
         <Grid.Column></Grid.Column>
         <Grid.Column>
+          <p>
+            I can be reached at{" "}
+            <span>
+              <a href="mailto:crotruck@gmail.com">crotruck@gmail.com</a>
+            </span>
+          </p>
+          <p className="centered">-- or --</p>
           <h1>Contact Me</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Field>
