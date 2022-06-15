@@ -47,7 +47,7 @@ const Projects = () => {
             screenshot={require("../../assets/Projects/note-taker-screenshot.png")}
             github="https://github.com/cmrotruck/note_taker"
             deployed="https://note-taker76.herokuapp.com/"
-            skills="HTML, CSS, JavaScript, React.js, Semantic UI for React, MondoDB, Mongoose"
+            skills="HTML, CSS, JavaScript, Express"
           />
           {/* <ProjectCard /> */}
         </Card.Group>
