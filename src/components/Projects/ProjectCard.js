@@ -1,16 +1,10 @@
 // import { Button } from "bootstrap";
 import React, { useState } from "react";
-import {
-  Card,
-  Dimmer,
-  Image,
-  Segment,
-  Header,
-  Button,
-} from "semantic-ui-react";
+import { Card, Dimmer, Image } from "semantic-ui-react";
 
 export default function ProjectCard(props) {
-  const { title, created, description, screenshot, github, deployed } = props;
+  const { title, created, description, screenshot, github, deployed, skills } =
+    props;
   const [state, setState] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -47,7 +41,9 @@ export default function ProjectCard(props) {
         <Card.Meta>Created in {created}</Card.Meta>
         <Card.Description>{description}</Card.Description>
       </Card.Content>
-      <Card.Content extra></Card.Content>
+      <Card.Content extra className="extra">
+        Skills used: {skills}
+      </Card.Content>
     </Card>
   );
 }

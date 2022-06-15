@@ -17,8 +17,8 @@ const About = () => {
               I am a web developer with 8 years experience in software
               development. I recently earned a certificate in Full Stack
               Development from The Ohio State University focusing on developing
-              skills in JavaScript, CSS, React.js as well as keeping the design
-              responsive.
+              skills in JavaScript, CSS, React.js, JavaScript, Node.js as well
+              as keeping the design responsive.
             </p>
             <p className="blockquote">
               As a computer programmer making the switch to web development, I

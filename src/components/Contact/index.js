@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Button, Form, Message } from "semantic-ui-react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -8,18 +9,28 @@ const Contact = () => {
   const [messageVal, setMessageVal] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(true);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     //send email here
-    // return <h1>Email sent!</h1>;
+    e.preventDefault();
     setIsEmailValid(validateEmail(emailVal));
+    const SERVICE_ID = "service_2xzza0a";
+    const TEMPLATE_ID = "template_cohxr1s";
+    const USER_ID = "n6mv2Iois9UzkZVQh";
 
     if (nameVal.length > 0 && messageVal.length > 0 && isEmailValid) {
-      console.log("this is good");
-      setIsSubmitted(true);
-      setEmailVal("");
-      setNameVal("");
-      setMessageVal("");
-      setIsEmailValid(true);
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+        (result) => {
+          console.log(result.text);
+          setIsSubmitted(true);
+          setEmailVal("");
+          setNameVal("");
+          setMessageVal("");
+          setIsEmailValid(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     }
 
     console.log("isEmailValid: ", isEmailValid, "isSubmitted: ", isSubmitted);
@@ -39,8 +50,20 @@ const Contact = () => {
       <Grid columns="3">
         <Grid.Column></Grid.Column>
         <Grid.Column>
+          <p>
+            I can be reached at{" "}
+            <span>
+              <a href="mailto:crotruck@gmail.com">crotruck@gmail.com</a>
+            </span>
+          </p>
+          <p className="centered">-- or --</p>
           <h1>Contact Me</h1>
-          <Form onSubmit={handleSubmit}>
+          <Form
+            onSubmit={handleSubmit}
+            action="mailto:crotruck@gmail.com"
+            method="post"
+            enctyp="text/plain"
+          >
             <Form.Field>
               <Form.Input
                 label="Full Name"
@@ -85,6 +108,7 @@ const Contact = () => {
               <Form.TextArea
                 label="Message"
                 placeholder="Message"
+                name="Message"
                 required
                 value={messageVal}
                 onChange={(e) => {
@@ -102,6 +126,11 @@ const Contact = () => {
               content="Expect a response within 2 business days."
             />
           ) : (
+            // <Message
+            //   error
+            //   header="Error!"
+            //   content="Ooops, something went wrong. Please try again or use the link above."
+            // />
             false
           )}
         </Grid.Column>
