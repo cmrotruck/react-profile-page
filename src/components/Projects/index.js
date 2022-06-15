@@ -38,7 +38,7 @@ const Projects = () => {
             screenshot={require("../../assets/Projects/Bootcamp_Zoo.jpg")}
             github="https://github.com/cmrotruck/bootcamp-zoo"
             deployed="http://bootcamp-zoo.herokuapp.com/"
-            skills="HTML, CSS, JavaScript, React.js, Semantic UI for React, MondoDB, Mongoose"
+            skills="HTML, CSS, JavaScript, React.js, Semantic UI for React, MongoDB, Mongoose"
           />
           <ProjectCard
             title="Note Taker"
