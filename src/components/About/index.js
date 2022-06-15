@@ -26,8 +26,6 @@ const About = () => {
               development. My previous experience with creating applications
               that communicate with servers and databases have prepared me for
               current web applications as well as being able to work as a team.
-              In my spare time, I volunteer coach for Ohio State University
-              Bowling Club.
             </p>
             <p className="blockquote">
               In my spare time, I volunteer coach for Ohio State University
