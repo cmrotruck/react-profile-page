@@ -37,6 +37,14 @@ const Projects = () => {
             github="https://github.com/cmrotruck/bootcamp-zoo"
             deployed="http://bootcamp-zoo.herokuapp.com/"
           />
+          <ProjectCard
+            title="Note Taker"
+            created="2021"
+            description="This is a backend assignment where the front end was already created. We had to create routes to point the html pages and api requests to the correct endpoints an manages a db.json file. This is a task board application. You can create and delete tasks. You can click on notes in the left column to see more info."
+            screenshot={require("../../assets/Projects/note-taker-screenshot.png")}
+            github="https://github.com/cmrotruck/note_taker"
+            deployed="https://note-taker76.herokuapp.com/"
+          />
           {/* <ProjectCard /> */}
         </Card.Group>
       </Dimmer.Dimmable>
