@@ -6,12 +6,9 @@ const Resume = () => {
     <div className="Resume">
       <p>
         {" "}
-        Download a copy of my resume{" "}
+        You can obtain a copy of my resume{" "}
         <span>
-          <a
-            href="https://drive.google.com/file/d/1q-Q-BMlb7Geay1bm8ckJ7Ggouk7_lbs1/view?usp=sharing"
-            download
-          >
+          <a href="https://docs.google.com/document/d/10zFEPcK1f-a7mnoBN2nf2jC0JHUmop42oKks4rgmt0s/edit?usp=sharing">
             here
           </a>
         </span>
