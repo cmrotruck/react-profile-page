@@ -6,11 +6,11 @@ A site to show my work and experience along with technologies that I have used.
 
 ## Built with
 
-*HTML
-*CSS
-*JavaScript
-*Jquery
-\*React
+    *HTML
+    *CSS
+    *JavaScript
+    *Jquery
+    *React
 
 ## Website
 
