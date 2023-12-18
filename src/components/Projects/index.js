@@ -27,7 +27,7 @@ const Projects = () => {
                 about the recipe."
             screenshot={require("../../assets/Projects/The_Forum_Screenshot.jpg")}
             github="https://github.com/cmrotruck/the-forum"
-            deployed="https://chad-the-forum.herokuapp.com/"
+            deployed="https://chad-rotruck-the-forum-fb497a2b9580.herokuapp.com"
             skills="HTML, CSS, JavaScript, Semantic UI, JQuery, Sequelize, MySQL, 3rd Party APIs"
           />
           <ProjectCard
